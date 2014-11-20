@@ -1,13 +1,17 @@
 language: python
 python:
-- '2.7'
-- '3.3'
-- pypy
-script: "bash -c './forward_socket; [[ $? -eq 2 ]]'"
+  - '2.7'
+  - '3.3'
+  - pypy
+script:
+  - ./setup.py install
+  - "bash -c 'forward_socket; [[ $? -eq 2 ]]'"
+  - ./_travis_check_tags.sh
 deploy:
   provider: pypi
   user: thatpanda
   password: "FAtNKkMfPALqOR8zchvdkX/e6/z5YxA2sqAC3c67HrEV1KzousoETg2s2zm/+5WW+QkL722LQNvzj6EBAoH8OJe5saXIGXTRyheMW0/2FHlYpdp3e+gcTUs8C7VeICvsQtclmbcq0ucUCsI9jOS7JseQ9SVYjAL6w5s0hNFnzwg="
   on:
     tags: true
-    branch: master
+    all_branches: true
+    python: 3.3
