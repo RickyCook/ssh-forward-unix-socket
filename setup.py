@@ -6,6 +6,5 @@ setup(name="SSH Unix Socket Forwarder",
       description="Forward a Unix socket over SSH",
       author="Ricky Cook",
       author_email="mail@thatpanda.com",
-      py_modules=['forward_socket'],
       scripts=['forward_socket'],
       )
