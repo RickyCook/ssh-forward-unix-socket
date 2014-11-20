@@ -1,0 +1,5 @@
+build/
+dist/
+python_env/
+*.egg-info/
+*.swp
