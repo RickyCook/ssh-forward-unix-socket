@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(name="ssh-forward-unix-socket",
-      version="0.0.1",
+      version="0.0.2",
       description="Forward a Unix socket over SSH",
       author="Ricky Cook",
       author_email="mail@thatpanda.com",
