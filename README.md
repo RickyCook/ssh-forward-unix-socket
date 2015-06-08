@@ -4,7 +4,7 @@ Forward a Unix socket over SSH
 
 ## Examples
 
-In all examples, <host> represents a remote host.
+In all examples, `<host>` represents a remote host.
 
 ### Forward a remote Docker socket
 ```bash
